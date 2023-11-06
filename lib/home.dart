@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:tarea_layouts/news.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
 
@@ -115,7 +114,7 @@ Widget buildWelcomes(List<Welcome> welcomes) {
         fit: BoxFit.cover,
         alignment: Alignment.center,),
         subtitle: Text("${welcome.source!.name} • $formattedTimeDifference"),
-        trailing:  const Icon(Icons.favorite_outline),
+        trailing:  const Icon(Icons.favorite_outline,),
       );
     },
     separatorBuilder: (BuildContext context, int index) {
